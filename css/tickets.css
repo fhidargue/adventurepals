@@ -1,0 +1,236 @@
+/********************/
+/*     Projects     */
+/********************/
+.slider-1 {
+	padding-bottom: 6rem;
+}
+
+.slider-1 .slider-container {
+	position: relative;
+}
+
+.slider-1 .swiper-container {
+	position: static;
+	width: 86%;
+}
+
+.slider-1 .swiper-button-prev,
+.slider-1 .swiper-button-next {
+	width: 18px;
+}
+
+.slider-1 .swiper-button-prev:focus,
+.slider-1 .swiper-button-next:focus {
+	/* even if you can't see it chrome you can see it on mobile device */
+	outline: none;
+}
+
+.slider-1 .swiper-button-prev {
+	left: -10px;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23505c67'%2F%3E%3C%2Fsvg%3E");
+	background-size: 18px 28px;
+}
+
+.slider-1 .swiper-button-next {
+	right: -10px;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23505c67'%2F%3E%3C%2Fsvg%3E");
+	background-size: 18px 28px;
+}
+
+.slider-1 .image-container {
+	margin-bottom: 3rem;
+}
+
+.slider-1 h3 {
+	margin-bottom: 1rem;
+}
+
+.slider-1 .testimonial-author {
+	color: #000000;
+}
+
+
+/*****************/
+/*     About     */
+/*****************/
+.basic-6 {
+    padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.basic-6 .text-container {
+	padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.basic-6 .list-unstyled .fas {
+	font-size: 0.375rem;
+	line-height: 1.625rem;
+}
+
+.basic-6 .list-unstyled .media-body {
+	margin-left: 0.5rem;
+}
+
+/*************************/
+/*     Media Queries     */
+/*************************/	
+/* Min-width 768px */
+@media (min-width: 768px) {
+
+	/* Header */
+	.header {
+		padding-top: 10rem;
+	}
+
+	.header .text-container {
+		margin-bottom: 9rem;
+	}
+	/* end of header */
+
+
+	/* Details 2 */
+	.basic-2 .text-container {
+		max-width: 690px;
+	}
+	/* end of details 2 */
+
+
+	/* Contact */
+	.form-1 form {
+		width: 500px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.form-1 .list-unstyled li {
+		display: inline-block;
+		margin-right: 1rem;
+	}
+	/* end of contact */
+
+
+	/* Extra Pages */
+	.ex-basic-1 .text-box {
+		padding: 1.75rem 2rem 0.875rem 2rem;
+	}
+	/* end of extra pages */
+}
+/* end of min-width 768px */
+
+
+/* Min-width 992px */
+@media (min-width: 992px) {
+
+	/* Details 1 */
+	.basic-1 .text-container {
+		margin-bottom: 0;
+	}
+	/* end of details 1 */
+
+
+	/* Details Lightbox */
+	.lightbox-basic {
+		padding: 3rem 3rem;
+	}
+
+	.lightbox-basic .image-container {
+		margin-bottom: 0;
+		text-align: left;
+	}
+	/* end of details lightbox */
+
+	/* Projects */
+	.slider-1 .swiper-container {
+		width: 98%;
+	}
+
+	.slider-1 .image-container {
+		margin-bottom: 0;
+	}
+	
+	.slider-1 .swiper-button-prev {
+		left: -22px;
+	}
+	
+	.slider-1 .swiper-button-next {
+		right: -22px;
+	}
+	/* end of projects */
+
+
+	/* About */
+	.basic-6 .text-container {
+		padding: 2.75rem 2.75rem 2rem 2.75rem;
+	}
+	/* end of about */
+}
+/* end of min-width 992px */
+
+
+/* Min-width 1200px */
+@media (min-width: 1200px) {
+
+	/* Details Lightbox */
+	.lightbox-basic .image-container {
+		margin-right: 1.5rem;
+	}
+	/* end of details lightbox */
+
+	/* Projects */
+	.slider-1 .image-container {
+		margin-right: 2rem;
+	}
+
+	.slider-1 .text-container {
+		margin-top: 1.75rem;
+		margin-left: 2rem;
+	}
+
+	.slider-1 .swiper-button-prev {
+		left: -36px;
+	}
+	
+	.slider-1 .swiper-button-next {
+		right: -36px;
+	}
+	/* end of projects */
+
+
+	/* About */
+	.basic-6 .text-container {
+		position: absolute;
+		bottom: 6rem;
+		width: 470px;
+	}
+
+	.basic-6 .image-container {
+		width: 920px;
+		margin-right: 0;
+		margin-left: auto;
+	}
+	/* end of about */
+}
+/* end of min-width 1200px */
+
+.text-container.about-tickets{
+    background-color: #f9f9f9;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+    /*border-radius: 10px;*/
+}
+
+#img-tickets{
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+    /*border-radius: 10px;*/
+}
+
+.price.section-padding.bg-gray.pos-re{
+    padding-bottom: 0px !important;
+}
+
+.image-container .img-fluid{
+    margin-left: 2px;
+}
+
+/*.swiper-slide .row .col-lg-6 .image-container .img-fluid{
+    border-radius: 10px;
+}*/
