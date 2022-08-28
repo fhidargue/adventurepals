@@ -113,19 +113,19 @@
               <div class="col-sm-6">
                 <label for="first-name" class="label-title">Name</label>
                 <input type="text" id="first-name" name="customer-first-name" class="form-control"
-                  placeholder="Enter a valid name" required />
+                  placeholder="Enter a valid name" required maxlength="40" />
               </div>
               <div class="col-sm-6">
                 <label for="last-name" class="label-title">Last Name</label>
                 <input type="text" id="last-name" name="customer-last-name" class="form-control"
-                  placeholder="Enter a valid last name" required />
+                  placeholder="Enter a valid last name" required maxlength="40" />
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6">
                 <label for="customer-email" class="label-title">Email</label>
                 <input type="email" id="customer-email" name="customer-email" class="form-control"
-                  placeholder="Enter a valid email" required />
+                  placeholder="Enter a valid email" required maxlength="40" />
               </div>
               <div class="col-sm-6">
                 <label for="customer-country" class="label-title">Your Country</label>
@@ -384,7 +384,7 @@
               <div class="col-sm-6">
                 <label for="customer-phone" class="label-title">Phone Number</label>
                 <input type="text" id="customer-phone" name="customer-phone" class="form-control"
-                  placeholder="Enter a valid phone number" required />
+                  placeholder="Enter a valid phone number" required maxlength="40" />
               </div>
               <div class="col-sm-6">
                 <label for="adventure-info" class="label-title">How can we help you?</label>
@@ -443,8 +443,8 @@
               <div class="col-sm-12">
                 <label for="adv-info" class="label-title">Tell us a little about your Adventure</label>
                 <textarea onclick="getSubject()" id="adv-info" name="adventure-additional-info" class="form-control"
-                  placeholder="How many days is your adventure? Which theme parks do you want to go? Etc..."
-                  required></textarea>
+                  placeholder="How many days is your adventure? Which theme parks do you want to go? Etc..." required
+                  maxlength="200"></textarea>
               </div>
             </div>
             <div class="row">
