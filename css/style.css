@@ -12855,3 +12855,15 @@ pre {
 .form-buttons-container button {
     margin-left: 2rem;
 }
+
+@media (max-width: 1000px) {
+    .form-buttons-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-buttons-container button {
+        margin-left: 0;
+        margin-top: 2rem !important;
+    }
+}
