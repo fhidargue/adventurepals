@@ -1,8 +1,8 @@
-.ftco-navbar-light{
+.ftco-navbar-light {
     position: relative !important;
 }
 
-.ftco-section-featured{
+.ftco-section-featured {
     margin-top: 0 !important;
     padding-bottom: 0 !important;
 }
@@ -11,32 +11,75 @@
     margin-top: 40px !important;
 }
 
-.ftco-section.testimony-section2.bg-light, .ftco-section.testimony-section4.bg-light{
+.ftco-section.testimony-section2.bg-light,
+.ftco-section.testimony-section4.bg-light {
     background-color: #fff !important;
 }
 
-span[class="quote d-flex align-items-center justify-content-center"]{
+span[class="quote d-flex align-items-center justify-content-center"] {
     display: none !important;
 }
 
-.beyond-title{
-    color: #60CBEA;
-    animation: breathe 3s linear infinite;
+.beyond-title {
+    font-weight: 500;
 }
 
-.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light.scrolled.awake{
+.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light.scrolled.awake {
     position: fixed !important;
 }
 
 @keyframes breathe {
     0% {
-     color: #000;
+        color: #000;
     }
-   }
+}
 
 @media (max-width: 767.98px) {
-    .ftco-section.testimony-section1.bg-light{
+    .ftco-section.testimony-section1.bg-light {
         margin-top: -80% !important;
         padding: 0 !important;
     }
-  }
+}
+
+.beyond-title-mobile {
+    font-size: 1.5rem;
+    line-height: 24px;
+    color: #000;
+    padding-left: 14px;
+    padding-bottom: 16px;
+    display: none;
+}
+
+.beyond-title-container {
+    display: block;
+}
+
+.beyond-banner {
+    margin-top: 7rem;
+}
+
+@media (max-width: 800px) {
+    .beyond-banner {
+        margin-top: 12rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .beyond-banner {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .beyond-title-mobile {
+        display: block;
+    }
+
+    .beyond-title-container {
+        display: none !important;
+    }
+
+    .beyond-details {
+        margin-bottom: 2rem !important;
+    }
+}
