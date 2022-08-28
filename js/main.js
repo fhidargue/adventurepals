@@ -416,13 +416,9 @@ function getSubject() {
     subject.setAttribute("value", "New Adventure Recieved - " + email);
 }
 
-function validateRegex(data) {
-    const regex = /^[^<>;]+$/;
-    return regex.test(data);
-}
-
 function validateForm() {
     const regex = /^[^<>;]+$/;
+    let validFields = false;
     let name = document.getElementById("first-name").value;
     let lastName = document.getElementById("last-name").value;
     let email = document.getElementById("customer-email").value;
@@ -430,21 +426,28 @@ function validateForm() {
     let info = document.getElementById("adv-info").value;
     let response = grecaptcha.getResponse();
 
+    if (
+        name === "" ||
+        lastName === "" ||
+        email === "" ||
+        phone === "" ||
+        info === ""
+    ) {
+        validFields = true;
+    } else if (
+        !regex.test(name) ||
+        !regex.test(lastName) ||
+        !regex.test(email) ||
+        !regex.test(phone) ||
+        !regex.test(info)
+    ) {
+        validFields = true;
+    }
+
     if (response.length == 0) {
         alert("Please verify the reCaptcha.");
         return false;
-    } else if (
-        name === "" ||
-        regex.test(name) ||
-        lastName === "" ||
-        regex.test(lastName) ||
-        email === "" ||
-        regex.test(email) ||
-        phone === "" ||
-        regex.test(phone) ||
-        info === "" ||
-        regex.test(info)
-    ) {
+    } else if (validFields) {
         alert(
             "Please provide all the information needed or some information is not valid."
         );
